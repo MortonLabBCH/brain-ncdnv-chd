@@ -1,6 +1,6 @@
 # Noncoding variants and sulcal patterns in congenital heart disease: Machine learning to predict functional impact
 ![MIT License](https://badgen.net/static/license/MIT/blue)
-[![DOI](https://badgen.net/badge/doi/10.1016%2Fj.isci.2024.111707)](https://doi.org/10.1016/j.isci.2024.111707)
+[![DOI](https://badgen.net/badge/DOI/10.1016%2Fj.isci.2024.111707)](https://doi.org/10.1016/j.isci.2024.111707)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14934079.svg)](https://doi.org/10.5281/zenodo.14934079)
 
 ### Overview
@@ -13,9 +13,16 @@ This repository contains the code used in the study: Mondragon-Estrada et al., [
 
 The main analyses were:
 
-*   Variant score prediction using deep learning models [Basenji2](https://github.com/calico/basenji) and [Enformer](https://github.com/deepmind/deepmind-research/tree/master/enformer)
-*   Weighted correlation network analysis ([WGCNA](https://cran.r-project.org/web/packages/WGCNA/index.html))
-*   Gene set enrichment analysis ([clusterProfiler](https://github.com/YuLab-SMU/clusterProfiler))
+*   Variant score prediction using deep learning models
+*   Statistical comparison of functional scores and quantitative traits
+*   Functional score correlation with sulcal pattern features
+*   Functional enrichment analysis in predicted target genes
+
+A more detailed description of the methods is available in Mondragon-Estrada and Morton, [Protocol to analyze deep-learning-predicted functional scores for noncoding de novo variants and their correlation with complex brain traits](https://star-protocols.cell.com/protocols/4135), STAR Protocols (2025), https://doi.org/10.1016/j.xpro.2025.103738.
+
+<p align="center">
+    <img width=80% height=80% src="https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/figures/graphical_abstract_2.png">
+</p>
 
 --------
 ### Requirements 
@@ -82,7 +89,7 @@ install.packages("ppcor")
 ```
 
 --------
-### Citation
+### Citations
 
 ```
 @article{MONDRAGONESTRADA2025111707,
@@ -96,5 +103,20 @@ install.packages("ppcor")
     issn = {2589-0042},
     doi = {https://doi.org/10.1016/j.isci.2024.111707},
     url = {https://www.sciencedirect.com/science/article/pii/S2589004224029341}
+}
+```
+
+```
+@article{MONDRAGONESTRADA2025103738,
+    author = {Enrique Mondragon-Estrada and Sarah U. Morton},
+    title = {Protocol to analyze deep-learning-predicted functional scores for noncoding de novo variants and their correlation with complex brain traits},
+    journal = {STAR Protocols},
+    volume = {6},
+    number = {2},
+    pages = {103738},
+    year = {2025},
+    issn = {2666-1667},
+    doi = {https://doi.org/10.1016/j.xpro.2025.103738},
+    url = {https://www.sciencedirect.com/science/article/pii/S2666166725001443},
 }
 ```
